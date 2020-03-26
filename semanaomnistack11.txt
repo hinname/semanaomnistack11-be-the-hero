@@ -1,0 +1,228 @@
+aula 01 - conhecendo a OmniStack
+
+notion.so
+
+escolha uma stack
+para web precisa de JavaScript
+
+entender oq o mercado ta procurando
+ecossitema
+caso de uso
+vagas no mercado
+se estão alinhadas com seu objetivo
+
+primeiro dia
+
+- apresentar a aplicação
+- configurar ambiente de desenvolvimento
+	node.js & NPM
+	Visual Studio Code
+- Entender sobre back-end & front-end
+- Criar projeto com Node.js
+- Entender sobre React&SPA
+- Criar projeto com ReactJS
+- Entender sobre React Native & Expo
+
+be the hero: para ajudar ONGs
+
+npm instala os pacotes frameworks e etc..
+
+
+Arquitetura da aplicação
+
+Back-end
+- regras de negócio
+- conexão banco de dados
+- Envio de e-mail
+- Comunicação com webservices
+- autenticação do usuario
+- criptografia e segurança
+
+api não tem camada visual
+restful por seguir padrões
+
+back end comunica como um front end pelo JSON
+
+Front end 
+
+tudo relacionado a visualização
+
+JSON armazena informações principais
+vai existir em todos os projetos
+armazena independencias
+
+
+ENTENDENDO O REACT
+
+Abordagem tradicional
+
+navegador => requisição => node.js => respostas (html) => navegador
+
+
+
+Na abordagem tradicional, a cada requisição, o servidor retorna o conteudo
+completo da pagina, contendo todo HTML e CSS
+
+Essa abordagem limita o front-end para o browser já que o aplicativo mobile
+ou serviços externos não vão conseguir interpretar o HTML
+
+Abordagem de SPA (single-page applications)
+
+navegador => requisição => node.js => resposta(JSON) => navegador(html,css,JS)
+
+Na abordagem de SPA, as requisições trazem apenas dados como respostas e, com esses dados,
+o front-end pode preeencher as informações em tela.
+
+A página nunca recarrega, otimizando a performance e dando vida ao conceito de SPA. Retornado apenas
+JSON podemos ter quantos front-ends quisermos
+
+tem rotas mas é controlada pelo react
+
+
+npx executa um pacote sem estar instalado na maquina
+
+Entendendo o React Native
+
+Abordagem tradicional
+
+Apple			Android
+Objective C		Java
+Swift			Kotlin
+
+.ipa			.apk
+
+Na abordagem tradicional, criamos uma aplicação para IOS e outra para android, e nesses casos
+o trabalho se torna repetido tanto pta criação quanto para as alterações no projeto
+
+Abordagem do React Native
+
+todo codigo feito é em JS, esse codigo não é convertido em codigo nativo, melhor do que isso,
+o dispositivo passa a entender o codigo JS e a interface gerada é totalmente nativa
+
+JS core da o entendimento do JS para o mobile
+
+por que utilizar o Expo?
+
+sem o expo, precisamos instalar em nosso sistema tanto o Android studio para obter a SDK
+de desenvolvimento Android, e o Xcode(apenas no mac) para obter a SDK dos IOS
+
+nesse caso, nossa inciação no desenvolvimento fica mais penosam já que nossas SDK'S não são
+extremamente simples de instalar e livres de erros
+
+Arquiteturado Expo
+
+envia apenas codigo JS
+
+com o Expo, nós instalamos um aplicativo no celular chamado Expo, e dentro dele, tudo que 
+precisamos para desenvolver no React Native já esta instalado, como as API'S de mapas, geolocalização
+camera, sensores, calendario, etc..
+
+Com isso, não precisamos nos preocupar em gerar o aplicativopra Android e IOS
+já que o app do Expo instalado tem tudo o que precisamos e assim usamos apenas React
+
+
+aula 02
+
+plano do dia
+----------------------------------------------------------------------
+Node.js e express
+	rotas e recursos
+	metodos HTTP
+	tipos de parametros
+Configurando Nodemon
+Utilizando Insomnia
+Ddiferenças entre bancos de dados
+Configurando banco de dados
+Pensando nas entidades e funcionalidades
+Construção do back-end
+Adicionando Modulo CORDS
+Enviando Back-end ao Github-
+--------------------------------------------------------------------
+
+codigo code . na pasta do terminal para ir pro vscode.
+
+cad rota da aplicação tem que ter um caminho (/devs por exemplo)
+
+Metódos HTTP:
+    GET: Buscar uma informação do back-end (enter no browser pra digitar url)
+    POST: Criar uma informação no back-end
+    PUT: Alterar uma informação no back-end
+    DELETE: Deletar uma informação no back-end
+
+    é um conceito semantico, pois não há muita diferença mas é bom para entendimento do código
+
+
+navegador so pega método get
+utilização do insomnia para criar requisição com qualquer método HTTP
+
+Tipos de parâmetros:
+    Query Parms: Parâmetros nomeados enviados na rota após "?" (filtros, paginação) (request.query)
+    Route Parms: Parâmetros utilizados utilizados para identificar recursos (/users:id ,onde id sera substituido por numeros id) (request.params)
+    Request Body: Corpo da requisição, utilizado para criar ou alterar recursos (request.body)
+
+nodemon utilizado para tornar o desenvolvimento melhor sem precisar ficar reiniciando
+servidor todo momento
+
+Banco de dados:
+    SQL: MySQL, SQLite, PostgreSQL, Oracle, Microsoft SQL Server
+    noSQL : MongoDB, CouchDB, etc
+
+Driver: SELECT * FROM users
+    Query Builder: table ('users').select('*') oq sera utilizado
+
+utilização do knex.js para integração com bancod e dados
+
+organização: criar pasat src, para todo codigo criado pelo dev
+routes.js para não deixar todas as rotas no index.js
+
+Entidades da aplicação
+
+algo que vai ser salvo na aplicação
+entidade ONG
+entidade Caso (incident)
+
+Funcionalidades
+ 
+login de ONG
+logout de ONG (logout fica para front-end pois não é nada complexo)
+cadastro de ONG
+cadastrar novos casos 
+deletar casos
+listar casos especificos de uma ONG
+Listar todos os casos
+Entrar em contato com a ONG (só no front end será trabalhado)
+
+migrations do knex : controle de versão das tabelas do BD
+
+id principal sera gerado pela aplicação para as ONGs entrarem na aplicação dps
+de cadastradas
+
+await é utilizado para esperar o codigo ser realizado para então retornar
+
+
+controller nãod eve ter mais do que 5 metodos: um para listagem, um metodo para retornar
+um unico item (se fosse necessario), criação , alteração e deletar.
+
+por isso a criação de um novo controller
+
+utilizando github
+
+gitignore para não subir o arquivo
+node modules não é necessário pois além de pesado, quando for instalado as dependencias do projeto,
+node modules vais er instalado 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
