@@ -9,10 +9,9 @@ exports.up = function(knex) {
         table.string('ong_id').notNullable();
 
         table.foreign('ong_id').references('id').inTable('ongs'); //chave estrangeira
-      });
+    });
 };
 
 exports.down = function(knex) {
     return knex.schema.dropTable('incidents');
-  
 };

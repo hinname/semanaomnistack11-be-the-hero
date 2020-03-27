@@ -211,6 +211,57 @@ gitignore para não subir o arquivo
 node modules não é necessário pois além de pesado, quando for instalado as dependencias do projeto,
 node modules vais er instalado 
 
+aula 03 - desenvolvendo frontend web
+
+plano de aula:
+
+-----------------------------------------------------------------------------------------------
+-limpando estrutura
+-conceitos do react
+	-JSX
+	-Componente
+	-Propriedades
+	-Estado
+	-Imutabilidade
+-página de login
+-Configurando rotas
+-Cadastro de ONGs
+-Listagem de casos
+-Cadastro de um novo caso
+-Conectando aplicação a API
+-Enviar projeto ao Github
+--------------------------------------------------------------------------------------------
+entendendo o react
+
+react monta a estrutura a partir do javascript
+
+index.html é iniciado, depois o id root é preenchido com o javascript
+<div id="root">
+
+
+jsx(javascript xml) é o html dentro do react (javascript)
+
+propriedades - parecido com atributos do html mas presente nos componentes do react
+
+podemos utilizar componentes dentro de outros
+ex Header dentro do componente app
+
+Estado - uma informação que vai ser mantida pelo componente. Ex : input do usuario algod e uma api
+não pode-se usar variaveis de maneira normal, mas sim estados
+não podemos colocar um elemento embaixo do outro sem estar um uma div
+estado permite com toda vez que ele for alterado o componente seja renderizado novamente
+
+imutabilidade o valor do estado nunca pode mudar de forma direta, apenas sobrepor
+
+react router
+switch garante que apenas uma rota seja executada por momento
+link para deixar com comportamento de SPA
+
+cliente http é responsavel por fazer a chamada com a api e retornar respostas
+npm install axios
+
+use effect dispara uma função em um determinado momento do componente
+
 
 
 

@@ -21,6 +21,6 @@ module.exports = {
             uf,
         })
 
-        return reponse.json({ id }); //retorna o id pois ela sera necessario para o login
+        return response.json({ id }); //retorna o id pois ela sera necessario para o login
     }
 };
