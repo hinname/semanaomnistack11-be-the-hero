@@ -262,8 +262,54 @@ npm install axios
 
 use effect dispara uma função em um determinado momento do componente
 
+dia 4 - app mobile
+
+não colecione cursos
+
+plano de aula
+---------------------------------------------------------------------------------------------------
+-Instalando Expo
+-Criando projeto React Native
+-Executando Projeto
+	- no celular
+	- emuladores
+	- expo snack
+-Diferenças para o ReactJS
+	- Elementos HTML
+	- Semântica
+	- Estilização
+		- Flexbox
+		- Propriedades
+		- Herança de estilos
+		- Estilização própria
+-Estrutura de pastas
+-Icone e Splash Screen
+-Configurando navegação
+-Página de casos
+-Detalhe do caso
+-Abrindo Whatsapp & E-mail
+-Conexão com API
+-Enviando projeto ao Github
+------------------------------------------------------------------------------------------------------
 
 
+-expo pode ser utilizando tanto por emulador quando pelo celular via QR code
+
+-expo snack deve ser utilizado apenas em ultima instancia pois limita o desenvolvimento por ter poucas funcionalidades
+
+o react native é diferente do reactjs pois o react native não diferencia igual elementos html (header, footer)
+pois não tem semantica
+
+
+estilização no react native também é diferente
+style={objeto com a estilização}
+styleSheeet.create({}) para criar os estilos
+
+todos os elementos do react native ja tem display flex por padrão
+
+não existe herança de estilos no react native (não pode passar estilização em um componente acima para os de baixo herdar)
+
+react navigation/native
 
 
 
