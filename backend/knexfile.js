@@ -13,6 +13,18 @@ module.exports = {
     useNullAsDefault : true,
   },
 
+  test: { //ambiente de teste
+    client: 'sqlite3',
+    connection: {
+      filename: './src/database/test.sqlitet'
+    },
+    migrations: {
+      directory: './src/database/migrations'
+    },
+    useNullAsDefault : true,
+  },
+
+
   staging: { //ambiente que simula o de produção para um time de desenvolvimento
     client: 'postgresql',
     connection: {

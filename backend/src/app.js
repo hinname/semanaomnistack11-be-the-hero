@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const { errors } = require('celebrate');
 const routes = require('./routes');
 
 const app = express();
@@ -8,6 +9,7 @@ const app = express();
 app.use(cors()); //todas as aplicações front end podem acessar backend
 app.use(express.json()); // express tranforma o JSON em algo compreensivel pelo node.js
 app.use(routes);
+app.use(errors());
 
 /* 
 Metódos HTTP:
@@ -28,5 +30,4 @@ Tipos de parâmetros:
 */
 
 
-
-app.listen(3333);
+module.exports = app;

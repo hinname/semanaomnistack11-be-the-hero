@@ -313,7 +313,79 @@ react navigation/native
 
 
 
+aula 05 - Funcionalidades avançadas
 
+plano de aula
+-----------------------------------------------------------------------------------------------------
+
+-Adicionando validação
+-Adicionando testes
+	- por que fazer testes?
+	- TDD
+	- Configurando Jest
+	- Tipos de testes
+	- Configurando bando de testes
+	- Instalando supertest
+	- Testando nota de autenticação
+-Deploy
+	- Alternativas
+	- Qual escolher?
+-Estudos daqui pra frente
+	- Padrões de código: ESLint, Prettier
+	- Autenticação JWT
+	- Styled Components
+- Dicas para aproveitar melhor 
+	- Github
+	- Linkedin
+
+-----------------------------------------------------------------------------------------------------------------
+
+Biblioteca celebrate para fazer validações no backend
+
+as rotas de criação e alteração (delete) que são colocadas as validações
+
+evitar erros com codigo 500 pois denota que a aplicação não sabe oq fazer com o erro
+para isso basta importar errors do celebrate
+
+pq fazer testes? pois existe aplicações gigantes com mais de 20 telas oq torna o teste mais dificil manualmente
+
+TDD - test-driven development: criar o teste antes para depois desenvolver a aplicação. funciona como um guia para o desenvolvedor
+pois assim o teste "diz" o que esta faltando no codigo (PESQUISAR SOBRE)
+
+configurando jest - framework de teste que foi utilizado
+
+tipos de testes - testes unitarios e de integrações
+
+integração testa o fluxo de uma rota inteira da aplicação
+unitaros apenas uma peça da nossa aplicação de maneira muita isolada, não se conecta com outras conexões
+
+LER sobre variaveis ambiente
+
+biblioteca utilizada por testes integrações : supertest
+
+dica para teste no profile que precisa de authorization request().set('Authorization', 'id de uma ong valida')
+
+Deploy: heroku pq tem plano gratuito bacana
+video deploy heroku nodejs
+
+digitalocean para projetos com escalas um pouco maior
+video rocketseat 
+
+aws, google cloud e azure são as maiores 
+
+para o deploy do front end
+
+para desenvolvimento e escalas menores: netlify
+
+como gerar apk com expo: video rocketseat
+
+Estudos daqui pra frente
+-padrões de codigo - tem no ytb rocketseat
+-autenticação jwt- tem post da rocketseat e alguns videoss
+- styled components -video tbm
+
+utilize o github e likendin
+faça videos mostrando aplicação e tecnologias utilizadas
 
 
 
