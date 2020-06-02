@@ -1,7 +1,7 @@
 # semanaomnistack 11
 ## Projeto: Be The Hero
 
-aplicação criada durante a semana omnistack, com a intenção de mostrar na prática, conceitos do Node.js (backend), React (frontend) e React native (mobile)
+  Aplicação criada durante a semana omnistack om a intenção de mostrar na prática, conceitos do Node.js (backend), React (frontend) e React native (mobile).
 
 ## Como iniciar o node
 - Abra o terminal na pasta backend
